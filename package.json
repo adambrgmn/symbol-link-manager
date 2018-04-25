@@ -1,0 +1,31 @@
+{
+  "name": "symbol-link-manager",
+  "version": "0.0.0-semantically-versioned",
+  "description": "Manage symbolic links with a central config",
+  "main": "index.js",
+  "module": "main.js",
+  "repository": "https://github.com/adambrgmn/symbol-link-manager.git",
+  "author": "Adam Bergman <adam@fransvilhelm.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test jest --env=node",
+    "test:watch": "NODE_ENV=test jest --watch --env=node",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.4",
+    "prettier": "^1.12.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
