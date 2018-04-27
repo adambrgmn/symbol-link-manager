@@ -77,7 +77,7 @@ As script:
 ```
 
 ```sh
-# And the from terminal
+# Then from the terminal
 $ npm run setup-links
 $ yarn run setup-links
 ```
