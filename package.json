@@ -8,6 +8,7 @@
   "author": "Adam Bergman <adam@fransvilhelm.com>",
   "license": "MIT",
   "bin": "./bin/cli.js",
+  "files": ["lib", "bin", "cli.js", "index.js", "main.js"],
   "scripts": {
     "test": "NODE_ENV=test jest --env=node",
     "test:watch": "NODE_ENV=test jest --watch --env=node",
