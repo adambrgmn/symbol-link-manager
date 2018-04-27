@@ -1,18 +1,20 @@
 /* eslint-disable no-console */
 import { dirname } from 'path';
 import pkgUp from 'pkg-up';
+import chalk from 'chalk';
 import linkManager from './lib/link-manager';
 import getConfig from './lib/get-config';
+import logResult from './lib/log-result';
 
 async function main() {
   try {
     const projectFolder = dirname(await pkgUp());
     const config = await getConfig({ projectFolder });
 
-    await linkManager(config, { projectFolder });
-    console.log('All done!');
+    const result = await linkManager(config, { projectFolder });
+    logResult(result, { projectFolder });
   } catch (err) {
-    console.error(err.message);
+    console.error(chalk.red(err));
     process.exit(1);
   }
 }

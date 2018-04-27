@@ -7,12 +7,14 @@
   "repository": "https://github.com/adambrgmn/symbol-link-manager.git",
   "author": "Adam Bergman <adam@fransvilhelm.com>",
   "license": "MIT",
+  "bin": "./bin/cli.js",
   "scripts": {
     "test": "NODE_ENV=test jest --env=node",
     "test:watch": "NODE_ENV=test jest --watch --env=node",
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
     "esm": "^3.0.26",
     "mkdirp": "^0.5.1",
     "pkg-up": "^2.0.0",
