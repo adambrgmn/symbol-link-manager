@@ -1,6 +1,6 @@
 {
   "name": "symbol-link-manager",
-  "version": "0.0.0-semantically-versioned",
+  "version": "0.0.0-development",
   "description": "Manage symbolic links with a central config",
   "main": "index.js",
   "module": "main.js",
@@ -11,7 +11,10 @@
   "scripts": {
     "test": "NODE_ENV=test jest --env=node",
     "test:watch": "NODE_ENV=test jest --watch --env=node",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "lint": "eslint .",
+    "validate": "eslint . && NODE_ENV=test jest --env=node",
+    "release": "semantic-release"
   },
   "dependencies": {
     "chalk": "^2.4.1",
@@ -32,7 +35,8 @@
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "lint-staged": "^7.0.4",
-    "prettier": "^1.12.1"
+    "prettier": "^1.12.1",
+    "semantic-release": "^15.1.7"
   },
   "config": {
     "commitizen": {
