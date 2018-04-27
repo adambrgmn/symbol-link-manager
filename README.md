@@ -7,11 +7,15 @@ developer life a little.
 
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 * [The problem](#the-problem)
 * [The solution](#the-solution)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Setup](#setup)
+* [Contributors](#contributors)
+* [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

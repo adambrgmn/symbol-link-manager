@@ -2,7 +2,7 @@
   "concurrent": false,
   "linters": {
     ".all-contributorsrc": ["all-contributors generate", "git add README.md"],
-    "README.md": ["doctoc --maxlevel 1 --github", "git add"],
+    "README.md": ["doctoc --maxlevel 2 --github", "git add"],
     "*.js": ["jest --passWithNoTests --findRelatedTests", "eslint"],
     "*.{js,json,md}": ["prettier --write", "git add"]
   }
